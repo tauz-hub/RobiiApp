@@ -31,9 +31,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="300dp"
-        android:text="login"
+        android:text="Create account"
         android:textColor="#FFFFFF"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:fontFamily="@font/montserrat_bold"
         app:textAllCaps="true" />
 
@@ -42,56 +42,68 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textViewLogin"
         android:hint="@string/prompt_username"
+        android:textColor="@android:color/white"
         android:layout_marginLeft="40dp"
+        android:ems="20"
         android:layout_marginRight="40dp"
         android:layout_marginTop="60dp"
-        android:id="@+id/editText_login_username"/>
+        android:id="@+id/editText_signup_username"
+        android:inputType="text"/>
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_login_username"
-        android:hint="@string/prompt_password"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="40dp"
-        android:id="@+id/editText_login_password"/>
-
-
-    <TextView
-        android:id="@+id/textView_login_forgotpassword"
+        android:id="@+id/editText_signup_email_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_login_password"
+        android:ems="20"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/editText_signup_username"
+        android:hint="Email"
+        android:textColor="@android:color/white"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText_signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_signup_username"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+
+        android:hint="@string/prompt_password"
+        android:inputType="text"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_signup_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Create" />
+    <TextView
+        android:id="@+id/textView_signup_havaaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_create"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="15dp"
-        android:text="@string/prompt_forgotpassword"
+        android:text="@string/prompt_haveaccount"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="18sp"
+        android:layout_centerHorizontal="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView_login_forgotpassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:text="Login" />
 
-    <TextView
-        android:id="@+id/textView_hyperlink_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_login"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="15dp"
-        android:text="Sign Up"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
+
+
+
+
 </RelativeLayout>

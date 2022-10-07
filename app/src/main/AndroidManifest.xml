@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tauaferreira.robiitcc">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RobiiTCC">
         <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".SignUpActivity"></activity>
         <activity android:name=".LoginActivity"></activity>
         <activity
             android:name=".SplashActivity"
