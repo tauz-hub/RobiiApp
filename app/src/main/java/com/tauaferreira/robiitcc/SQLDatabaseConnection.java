@@ -34,10 +34,6 @@ public class SQLDatabaseConnection {
 
             conn = DriverManager.getConnection(URL_CONEXAO);
 
-        } catch (SQLException erro) {
-            Log.d("CONEXAO_MSSQL", erro.getMessage());
-        } catch (ClassNotFoundException erro) {
-            Log.d("CONEXAO_MSSQL", erro.getMessage());
         } catch (Exception erro) {
             Log.d("CONEXAO_MSSQL", erro.getMessage());
         }

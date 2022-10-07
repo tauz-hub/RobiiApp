@@ -51,52 +51,21 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                activar = true;
-                onResume();
-            }
+        button.setOnClickListener(v -> {
+            activar = true;
+            onResume();
         });
-        Desligar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MyConexionBT.write("b");
-            }
-        });
-        acenderR1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MyConexionBT.write("c");
-            }
-        });
-        acenderR2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MyConexionBT.write("d");
-            }
-        });
-        acenderL1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MyConexionBT.write("e");
-            }
-        });
-        acenderL2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MyConexionBT.write("f");
-            }
-        });
+        Desligar.setOnClickListener(v -> MyConexionBT.write("b"));
+        acenderR1.setOnClickListener(v -> MyConexionBT.write("c"));
+        acenderR2.setOnClickListener(v -> MyConexionBT.write("d"));
+        acenderL1.setOnClickListener(v -> MyConexionBT.write("e"));
+        acenderL2.setOnClickListener(v -> MyConexionBT.write("f"));
 
-        desconectar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try{
-                    btSocket.close();
-                } catch(Exception e){
-                    e.printStackTrace();
-                }
+        desconectar.setOnClickListener(v -> {
+            try{
+                btSocket.close();
+            } catch(Exception e){
+                e.printStackTrace();
             }
         });
     }

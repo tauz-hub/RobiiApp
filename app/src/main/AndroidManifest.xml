@@ -15,10 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RobiiTCC">
         <activity android:name=".MainActivity" />
-        <activity android:name=".DeviceControlActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
-        <service android:name=".BluetoothLeService" android:enabled="true"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true">
