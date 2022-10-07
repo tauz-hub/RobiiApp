@@ -26,25 +26,19 @@ public class SignUpActivity extends AppCompatActivity {
 
         Button mbutton = findViewById(R.id.button_create);
 
-        mbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                EditText mUsername = findViewById(R.id.editText_signup_username);
-                EditText mEmail = findViewById(R.id.editText_signup_email_address);
-                EditText mPassword = findViewById(R.id.editText_signup_password);
+        mbutton.setOnClickListener(view -> {
+            EditText mUsername = findViewById(R.id.editText_signup_username);
+            EditText mEmail = findViewById(R.id.editText_signup_email_address);
+            EditText mPassword = findViewById(R.id.editText_signup_password);
 
 
-                Usuario user = new Usuario(mUsername.getText().toString(),mEmail.getText().toString(),mPassword.getText().toString());
-                boolean resp = false;
-                try {
-                     resp = UsuarioDAO.registrarUsuario(user);
-                } catch (SQLException throwables) {
-                    throwables.printStackTrace();
-                }
-
+            Usuario user = new Usuario(mUsername.getText().toString(),mEmail.getText().toString(),mPassword.getText().toString());
+            boolean resp = UsuarioDAO.registrarUsuario(user);
+            if(resp) {
                 startActivity(new Intent(getBaseContext(), LoginActivity.class));
                 finish();
-
+            } else {
+                Toast.makeText(getBaseContext(), "Usuario não registrado! Tente novamente alterando os campos", Toast.LENGTH_LONG).show();
             }
         });
     }

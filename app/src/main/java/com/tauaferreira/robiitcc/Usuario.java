@@ -1,14 +1,14 @@
 package com.tauaferreira.robiitcc;
 
 public class Usuario {
-    private int id;
+    private String id;
     private String username;
     private String email;
     private String password;
     private String bithdate;
     private String name;
 
-    public Usuario(int id, String username, String email, String password, String bithdate, String name){
+    public Usuario(String id, String username, String email, String password, String bithdate, String name){
         this.id = id;
         this.username = username;
         this.email = email;
@@ -22,13 +22,16 @@ public class Usuario {
         this.password = password;
     }
 
+    public Usuario() {
 
-
-    public int getId() {
-        return id;
     }
 
-    public void setId(int id) {
+
+    public String getId() {
+        return this.id;
+    }
+
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -7,11 +7,17 @@
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/drawable/custom_button_login.xml" value="0.1035" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/font/.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/font/montserrat_alternates_bold.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/actionbar_indeterminate_progress.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_login.xml" value="0.15" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_signup.xml" value="0.18" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_splash.xml" value="0.18" />
+        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/att_services_characteristics.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/fragment_login.xml" value="0.18" />
+        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/gatt_services_characteristics.xml" value="0.1" />
+        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/listitem_device.xml" value="0.1" />
+        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/menu/gatt_services.xml" value="0.1" />
+        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/menu/main.xml" value="0.1" />
       </map>
     </option>
   </component>

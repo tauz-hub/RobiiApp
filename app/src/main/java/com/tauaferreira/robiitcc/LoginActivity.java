@@ -30,27 +30,18 @@ public class LoginActivity extends AppCompatActivity {
 
         Button buttonLogin = findViewById(R.id.button_login);
 
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                EditText mUsername = findViewById(R.id.editText_login_username);
-                EditText mPassword = findViewById(R.id.editText_login_password);
-               boolean res = false;
-                try {
-                    res = UsuarioDAO.VerificarUsuario(mUsername.getText().toString(),mPassword.getText().toString());
-                    System.out.println(res);
-                } catch (SQLException throwables) {
-                    throwables.printStackTrace();
-                }
+        buttonLogin.setOnClickListener(view -> {
+            EditText mUsername = findViewById(R.id.editText_login_username);
+            EditText mPassword = findViewById(R.id.editText_login_password);
+            boolean res = UsuarioDAO.verificarUsuario(mUsername.getText().toString(),mPassword.getText().toString());
 
-                if(res){
-                    startActivity(new Intent(getBaseContext(), MainActivity.class));
-                    finish();
-                } else {
-                    Toast.makeText(getBaseContext(), "Usuario não autenticado", Toast.LENGTH_LONG).show();
-                }
-
+            if(res){
+                startActivity(new Intent(getBaseContext(), MainActivity.class));
+                finish();
+            } else {
+                Toast.makeText(getBaseContext(), "Usuario não autenticado", Toast.LENGTH_LONG).show();
             }
+
         });
     }
 
