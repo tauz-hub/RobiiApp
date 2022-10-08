@@ -1,16 +1,14 @@
 package com.tauaferreira.robiitcc;
-import android.content.Context;
+
 import android.os.StrictMode;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class SQLDatabaseConnection {
     // Objeto de conexão
-    static String ip = "192.168.107.191";
+    static String ip = "192.168.0.11";
     static String banco = "ROBIIAPP";
 
     static String usuario = "sa";
@@ -20,7 +18,7 @@ public class SQLDatabaseConnection {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
-        Connection conn = null;
+        Connection conn;
         String URL_CONEXAO;
 
         try {
@@ -36,6 +34,7 @@ public class SQLDatabaseConnection {
 
         } catch (Exception erro) {
             Log.d("CONEXAO_MSSQL", erro.getMessage());
+            return null;
         }
 
         return conn;

@@ -20,6 +20,7 @@ import java.sql.SQLException;
 
 public class LoginActivity extends AppCompatActivity {
     public static final String NOME_PREFERENCE = "INFORMACOES_LOGIN_AUTOMATICO";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +35,9 @@ public class LoginActivity extends AppCompatActivity {
         String login = prefs.getString("usernameSave", null);
         String senha = prefs.getString("passwordSave", null);
         if (login != null) {
-            boolean res = UsuarioDAO.verificarUsuario(login,senha);
+            boolean res = UsuarioDAO.verificarUsuario(login, senha);
             if (res) {
-                startActivity(new Intent(getBaseContext(), MainActivity.class));
+                startActivity(new Intent(getBaseContext(), ConnectBluetoothActivity.class));
                 finish();
             }
 
@@ -47,21 +48,20 @@ public class LoginActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(view -> {
             EditText mUsername = findViewById(R.id.editText_login_username);
             EditText mPassword = findViewById(R.id.editText_login_password);
-            boolean res = UsuarioDAO.verificarUsuario(mUsername.getText().toString(),mPassword.getText().toString());
+            boolean res = UsuarioDAO.verificarUsuario(mUsername.getText().toString(), mPassword.getText().toString());
 
-            if(res){
+            if (res) {
 
                 SharedPreferences.Editor editor = getSharedPreferences(NOME_PREFERENCE, MODE_PRIVATE).edit();
 
                 editor.putString("usernameSave", mUsername.getText().toString());
                 editor.putString("passwordSave", mPassword.getText().toString());
                 editor.apply();
-                startActivity(new Intent(getBaseContext(), MainActivity.class));
+                startActivity(new Intent(getBaseContext(), ConnectBluetoothActivity.class));
                 finish();
             } else {
                 Toast.makeText(getBaseContext(), "Usuario não autenticado", Toast.LENGTH_LONG).show();
             }
-
         });
     }
 
@@ -84,6 +84,4 @@ public class LoginActivity extends AppCompatActivity {
                     finish();
                 });
     }
-
-
 }

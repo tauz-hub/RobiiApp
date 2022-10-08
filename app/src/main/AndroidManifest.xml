@@ -3,6 +3,8 @@
     package="com.tauaferreira.robiitcc">
 
     <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -17,6 +19,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
+        <activity android:name=".ConnectBluetoothActivity" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">

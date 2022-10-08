@@ -6,62 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
+
+    <TextView
+        android:id="@+id/textView_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
-        android:text="Conectar" />
+        android:text="Hello" />
 
     <Button
-        android:id="@+id/acenderR2"
+        android:id="@+id/button_main_ON"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="187dp"
-        android:text="ligar R2" />
-    <Button
-        android:id="@+id/acenderL2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="240dp"
-        android:text="ligar L2" />
+        android:layout_below="@+id/textView_main"
+        android:text="ON" />
 
     <Button
-        android:id="@+id/acenderR1"
-
+        android:id="@+id/button_main_OFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="187dp"
-        android:text="Ligar R1" />
-
-    <Button
-        android:id="@+id/acenderL1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="240dp"
-        android:text="Ligar L1" />
-
-    <Button
-        android:id="@+id/Desligar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="305dp"
-        android:text="Desligar" />
-
-    <Button
-        android:id="@+id/Desconectar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/acenderR1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="123dp"
-        android:text="Desconectar" />
+        android:layout_below="@+id/button_main_ON"
+        android:text="OFF" />
 </RelativeLayout>

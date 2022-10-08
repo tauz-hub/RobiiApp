@@ -3,7 +3,6 @@ package com.tauaferreira.robiitcc;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.PersistableBundle;
 import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
