@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-
+        android:contentDescription="RobiiLogo"
         android:src="@drawable/logo_marca_robii_ofc"/>
 
 
@@ -22,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/logo"
+        android:contentDescription="RobiiLogo"
         android:src="@drawable/rectangle_login" />
 
     <TextView
@@ -45,6 +46,11 @@
         android:textColor="@android:color/white"
         android:layout_marginLeft="40dp"
         android:ems="20"
+        android:background="@drawable/custom_input"
+        android:padding="8dp"
+        android:gravity="center"
+        app:fontFamily="@font/montserrat"
+        android:textSize="16sp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="60dp"
         android:id="@+id/editText_signup_username"
@@ -54,10 +60,16 @@
         android:id="@+id/editText_signup_email_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_signup_username"
         android:ems="20"
+        android:background="@drawable/custom_input"
+        android:padding="8dp"
+        android:gravity="center"
+        app:fontFamily="@font/montserrat"
+        android:textSize="16sp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:layout_below="@+id/editText_signup_username"
+        android:layout_marginTop="20dp"
         android:hint="Email"
         android:textColor="@android:color/white"
         android:inputType="textEmailAddress" />
@@ -66,44 +78,48 @@
         android:id="@+id/editText_signup_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText_signup_username"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_below="@+id/editText_signup_email_address"
         android:ems="10"
-
+        android:background="@drawable/custom_input"
+        android:padding="8dp"
+        android:gravity="center"
+        app:fontFamily="@font/montserrat"
+        android:textSize="16sp"
         android:hint="@string/prompt_password"
-        android:inputType="text"
-        android:textColor="@android:color/white" />
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_create"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText_signup_password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="Create" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Create"
+        app:fontFamily="@font/montserrat"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_login"
+        />
+
     <TextView
         android:id="@+id/textView_signup_havaaccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_create"
-        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="15dp"
         android:text="@string/prompt_haveaccount"
         android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
         android:layout_centerHorizontal="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
+        android:textColor="@android:color/white"
+        app:fontFamily="@font/montserrat"
+        android:textSize="16sp" />
 
 </RelativeLayout>
