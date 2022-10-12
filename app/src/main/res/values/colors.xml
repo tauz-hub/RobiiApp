@@ -11,4 +11,7 @@
     <color name="back_blue">#06091A</color>
     <color name="gray_500">#339B9B9B</color>
 
+    <!-- Login -->
+    <color name="white_text">#FFFFFFFF</color>
+
 </resources>

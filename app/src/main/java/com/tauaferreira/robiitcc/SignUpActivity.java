@@ -17,9 +17,6 @@ public class SignUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         setupHyperlinkHaveAccount();
 
-        getSupportActionBar().hide();
-
-
         Button mbutton = findViewById(R.id.button_create);
 
         mbutton.setOnClickListener(view -> {
