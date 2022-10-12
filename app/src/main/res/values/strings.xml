@@ -28,6 +28,20 @@
 
     <string name="text_view_signup">Sign Up</string>
 
+    <!-- Progress Bar -->
+    <string name="progress_percentage">25%</string>
+    <string name="progress">Progresso:</string>
+
+    <!-- ScrollView -->
+    <string name="SV_itens_number_1">1</string>
+    <string name="SV_itens_number_2">2</string>
+    <string name="SV_itens_number_3">3</string>
+    <string name="SV_itens_number_4">4</string>
+    <string name="SV_itens_number_5">5</string>
+    <string name="SV_itens_number_6">6</string>
+    <string name="SV_itens_number_7">7</string>
+    <string name="SV_itens_number_8">8</string>
+
     <!-- Menu items -->
     <string name="menu_connect">Connect</string>
     <string name="menu_disconnect">Disconnect</string>

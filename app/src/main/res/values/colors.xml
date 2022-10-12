@@ -14,4 +14,7 @@
     <!-- Login -->
     <color name="white_text">#FFFFFFFF</color>
 
+    <!-- Lesson List -->
+    <color name="background_main">#FF06091A</color>
+
 </resources>
