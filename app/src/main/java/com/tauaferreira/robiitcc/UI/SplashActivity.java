@@ -1,4 +1,4 @@
-package com.tauaferreira.robiitcc;
+package com.tauaferreira.robiitcc.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.tauaferreira.robiitcc.R;
 
 public class SplashActivity extends AppCompatActivity {
 

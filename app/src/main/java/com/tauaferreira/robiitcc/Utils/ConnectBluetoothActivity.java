@@ -1,4 +1,4 @@
-package com.tauaferreira.robiitcc;
+package com.tauaferreira.robiitcc.Utils;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -13,6 +13,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
+import com.tauaferreira.robiitcc.R;
+import com.tauaferreira.robiitcc.UI.MainActivity;
 
 import java.io.IOException;
 import java.util.Set;

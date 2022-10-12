@@ -1,4 +1,4 @@
-package com.tauaferreira.robiitcc;
+package com.tauaferreira.robiitcc.Utils;
 
 import android.os.StrictMode;
 import android.util.Log;

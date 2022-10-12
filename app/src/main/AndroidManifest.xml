@@ -15,12 +15,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RobiiTCC">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ConnectBluetoothActivity" />
+        <activity android:name=".UI.MainActivity" />
+        <activity android:name=".UI.SignUpActivity" />
+        <activity android:name=".UI.LoginActivity" />
+        <activity android:name=".Utils.ConnectBluetoothActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".UI.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
