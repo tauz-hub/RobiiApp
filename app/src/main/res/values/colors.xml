@@ -11,4 +11,10 @@
     <color name="back_blue">#06091A</color>
     <color name="gray_500">#339B9B9B</color>
 
+    <!-- Login -->
+    <color name="white_text">#FFFFFFFF</color>
+
+    <!-- Lesson List -->
+    <color name="background_main">#FF06091A</color>
+
 </resources>

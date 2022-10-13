@@ -1,10 +1,13 @@
-package com.tauaferreira.robiitcc;
+package com.tauaferreira.robiitcc.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.tauaferreira.robiitcc.Utils.ConnectedThread;
+import com.tauaferreira.robiitcc.R;
 
 public class MainActivity extends AppCompatActivity {
 

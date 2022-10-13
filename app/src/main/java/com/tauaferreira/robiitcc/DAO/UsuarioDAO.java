@@ -1,4 +1,6 @@
-package com.tauaferreira.robiitcc;
+package com.tauaferreira.robiitcc.DAO;
+
+import com.tauaferreira.robiitcc.Utils.SQLDatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

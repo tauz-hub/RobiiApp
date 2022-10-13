@@ -1,4 +1,4 @@
-package com.tauaferreira.robiitcc;
+package com.tauaferreira.robiitcc.DAO;
 
 public class Usuario {
     private String id;

@@ -1,4 +1,4 @@
-package com.tauaferreira.robiitcc;
+package com.tauaferreira.robiitcc.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,15 +10,16 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.tauaferreira.robiitcc.R;
+import com.tauaferreira.robiitcc.DAO.Usuario;
+import com.tauaferreira.robiitcc.DAO.UsuarioDAO;
+
 public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
         setupHyperlinkHaveAccount();
-
-        getSupportActionBar().hide();
-
 
         Button mbutton = findViewById(R.id.button_create);
 
