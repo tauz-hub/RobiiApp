@@ -14,16 +14,42 @@
         android:text="Hello" />
 
     <Button
-        android:id="@+id/button_main_ON"
+        android:id="@+id/button_main_l1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView_main"
-        android:text="ON" />
+        android:text="l1" />
 
     <Button
-        android:id="@+id/button_main_OFF"
+        android:id="@+id/button_main_l2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_main_ON"
-        android:text="OFF" />
+        android:layout_below="@+id/button_main_l1"
+        android:text="l2" />
+    <Button
+        android:id="@+id/button_main_r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_main_l2"
+        android:text="r1" />
+    <Button
+        android:id="@+id/button_main_r2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_main_r1"
+        android:text="r2" />
+
+    <Button
+        android:id="@+id/button_main_j1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_main_r2"
+        android:text="r2" />
+
+    <Button
+        android:id="@+id/button_main_j2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_main_j1"
+        android:text="r2" />
 </RelativeLayout>

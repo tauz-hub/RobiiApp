@@ -19,7 +19,7 @@
         <activity android:name=".UI.SignUpActivity" />
         <activity android:name=".UI.LoginActivity" />
         <activity android:name=".UI.ActivityLessonList"/>
-        <activity android:name=".Utils.ConnectBluetoothActivity" />
+        <activity android:name=".UI.ConnectBluetoothActivity" />
         <activity
             android:name=".UI.SplashActivity"
             android:exported="true">

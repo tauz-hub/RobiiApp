@@ -11,7 +11,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.tauaferreira.robiitcc.Utils.ConnectBluetoothActivity;
 import com.tauaferreira.robiitcc.R;
 import com.tauaferreira.robiitcc.DAO.UsuarioDAO;
 

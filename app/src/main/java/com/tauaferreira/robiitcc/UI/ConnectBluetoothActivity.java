@@ -1,4 +1,4 @@
-package com.tauaferreira.robiitcc.Utils;
+package com.tauaferreira.robiitcc.UI;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -15,7 +15,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.tauaferreira.robiitcc.R;
+import com.tauaferreira.robiitcc.UI.ActivityLessonList;
 import com.tauaferreira.robiitcc.UI.MainActivity;
+import com.tauaferreira.robiitcc.Utils.BluetoothSocketClass;
+import com.tauaferreira.robiitcc.Utils.ConnectedThread;
 
 import java.io.IOException;
 import java.util.Set;
@@ -29,7 +32,6 @@ public class ConnectBluetoothActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connect_bluetooth);
-        getSupportActionBar().hide();
 
         btAdapter = BluetoothAdapter.getDefaultAdapter();
         verificarBluetooth();
@@ -58,7 +60,7 @@ public class ConnectBluetoothActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Ative a permissão do bluetooth", Toast.LENGTH_LONG).show();
                 return;
             }
-            startActivityForResult(intent, 1);
+            startActivity(intent);
         }
     }
 
@@ -80,13 +82,14 @@ public class ConnectBluetoothActivity extends AppCompatActivity {
             ConnectedThread myconn = ConnectedThread.getInstance();
             myconn.setConnectionThread(btSocket);
 
-            startActivity(new Intent(getBaseContext(), MainActivity.class));
+            startActivity(new Intent(this, MainActivity.class));
             finish();
         } catch (IOException e) {
             Toast.makeText(getBaseContext(), "A conexão não foi estabelecida", Toast.LENGTH_LONG).show();
             try {
                 btSocket.close();
             } catch (IOException ignored) {
+                Toast.makeText(getBaseContext(), "O socket falhou", Toast.LENGTH_LONG).show();
             }
         }
     }
