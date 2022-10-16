@@ -17,4 +17,6 @@
     <!-- Lesson List -->
     <color name="background_main">#FF06091A</color>
 
+    <color name="background_login">#FF0019F8</color>
+
 </resources>
