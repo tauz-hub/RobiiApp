@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.tauaferreira.robiitcc.R;
 
-public class ActivityLessonList extends AppCompatActivity {
+public class LessonListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
