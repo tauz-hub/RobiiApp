@@ -17,11 +17,11 @@
         android:theme="@style/Theme.RobiiTCC">
         <activity android:name=".UI.MainActivity" />
         <activity android:name=".UI.SignUpActivity" />
-        <activity android:name=".UI.LoginActivity" />
-        <activity android:name=".UI.ActivityLessonList"/>
+        <activity android:name=".UI.SplashActivity" />
+        <activity android:name=".UI.LoginActivity"/>
         <activity android:name=".UI.ConnectBluetoothActivity" />
         <activity
-            android:name=".UI.SplashActivity"
+            android:name=".UI.LessonListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

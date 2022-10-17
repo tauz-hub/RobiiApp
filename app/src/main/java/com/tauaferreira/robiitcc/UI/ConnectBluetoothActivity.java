@@ -15,8 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.tauaferreira.robiitcc.R;
-import com.tauaferreira.robiitcc.UI.ActivityLessonList;
-import com.tauaferreira.robiitcc.UI.MainActivity;
 import com.tauaferreira.robiitcc.Utils.BluetoothSocketClass;
 import com.tauaferreira.robiitcc.Utils.ConnectedThread;
 
@@ -36,9 +34,9 @@ public class ConnectBluetoothActivity extends AppCompatActivity {
         btAdapter = BluetoothAdapter.getDefaultAdapter();
         verificarBluetooth();
 
-        Set<BluetoothDevice> pairedDeveicesList = btAdapter.getBondedDevices();
+        Set<BluetoothDevice> pairedDevicesList = btAdapter.getBondedDevices();
 
-        for (BluetoothDevice pairedDevice : pairedDeveicesList) {
+        for (BluetoothDevice pairedDevice : pairedDevicesList) {
             if (pairedDevice.getName().equals("HC-05")) {
 
                 address = pairedDevice.getAddress();

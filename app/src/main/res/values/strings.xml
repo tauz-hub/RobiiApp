@@ -2,7 +2,7 @@
     <string name="app_name">RobiiTCC</string>
     <!-- Strings related to login -->
     <string name="prompt_username">Username</string>
-    <string name="prompt_forgotpassword">Forgot password?</string>
+    <string name="prompt_forgot_password">Forgot password?</string>
     <string name="prompt_haveaccount">Have a account? Sign in</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
@@ -49,12 +49,17 @@
     <string name="menu_stop">Stop</string>
     <string name="is_serial">Serial Present:</string>
     <string-array name="roygbiv">
-        <item >Red</item>
-        <item >Green</item>
-        <item >Blue</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
     </string-array>
     <string name="button">Send</string>
     <string name="red_slide">Red</string>
     <string name="blue_slide">Blue</string>
     <string name="green_slide">Green</string>
+    <string name="login">Login</string>
+    <string name="contentDescription_login_logo">Logo Robii</string>
+    <string name="button_login">Login</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_home">Home</string>
 </resources>
