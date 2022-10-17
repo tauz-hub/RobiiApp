@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#06091A"
-    android:orientation="vertical"
-    android:visibility="visible">
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/logo"

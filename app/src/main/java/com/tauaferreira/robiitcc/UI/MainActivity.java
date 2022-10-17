@@ -1,5 +1,6 @@
 package com.tauaferreira.robiitcc.UI;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +13,13 @@ import com.tauaferreira.robiitcc.R;
 import com.tauaferreira.robiitcc.Utils.ConnectedThread;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+    private ConnectedThread myConn = ConnectedThread.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        myConn.start();
 
         Button button_l1 = findViewById(R.id.button_main_l1);
         Button button_l2 = findViewById(R.id.button_main_l2);
@@ -36,8 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void lostConnection(String input) {
 
-        ConnectedThread myConn = ConnectedThread.getInstance();
-        myConn.start();
+
 
         if (!myConn.write(input)) {
             Toast.makeText(this, "Lost Connection", Toast.LENGTH_SHORT).show();
@@ -46,12 +48,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
 
         switch (view.getId()){
-            case R.id.button_main_l1: lostConnection("a"); break;
             case R.id.button_main_l2: lostConnection("b"); break;
+            case R.id.button_main_l1: lostConnection("a"); break;
             case R.id.button_main_r1: lostConnection("c"); break;
             case R.id.button_main_r2: lostConnection("d"); break;
             case R.id.button_main_j1: lostConnection("e"); break;

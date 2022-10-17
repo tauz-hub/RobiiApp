@@ -80,7 +80,7 @@ public class ConnectBluetoothActivity extends AppCompatActivity {
             ConnectedThread myconn = ConnectedThread.getInstance();
             myconn.setConnectionThread(btSocket);
 
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, LessonListActivity.class));
             finish();
         } catch (IOException e) {
             Toast.makeText(getBaseContext(), "A conexão não foi estabelecida", Toast.LENGTH_LONG).show();
