@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ProfileFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
@@ -17,6 +17,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:textColor="@color/white"
+            android:id="@+id/fragment_profile_text"
             android:text="Profile Screen | Soon..."
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.fragment.app.FragmentContainerView>
 
 
 </FrameLayout>

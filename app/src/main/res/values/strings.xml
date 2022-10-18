@@ -61,8 +61,6 @@
     <string name="contentDescription_login_logo">Logo Robii</string>
     <string name="button_login">Login</string>
     <string name="menu_profile">Profile</string>
-    <string name="sequence_phrase1">Olá programador (a), me chamo Iobi e preciso da sua ajuda para realizar meu projeto que se chama Robii, posso contar com você?
-Iobiiiii ! Vamos nessa !!!
-</string>
+    <string name="sequence_phrase">Robii</string>
 
 <string name="menu_home">Home</string></resources>
