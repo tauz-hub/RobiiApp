@@ -1,16 +1,18 @@
 package com.tauaferreira.robiitcc.UI;
 
+import android.annotation.SuppressLint;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.ui.NavigationUI;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-
+import com.tauaferreira.robiitcc.DAO.Usuario;
+import com.tauaferreira.robiitcc.DAO.UsuarioDAO;
 import com.tauaferreira.robiitcc.R;
 import com.tauaferreira.robiitcc.databinding.ActivityLessonListBinding;
 import com.tauaferreira.robiitcc.fragments.HomeFragment;
@@ -27,6 +29,8 @@ public class LessonListActivity extends AppCompatActivity {
         mBinding = ActivityLessonListBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
 
+
+
         replaceFragment(new HomeFragment());
 
         mBinding.bottomNavigation.setOnItemSelectedListener(item -> {
@@ -36,10 +40,17 @@ public class LessonListActivity extends AppCompatActivity {
                     replaceFragment(new HomeFragment());
                     break;
                 case R.id.menu_profile:
-                    replaceFragment(new ProfileFragment());
+                    Fragment profile = new ProfileFragment();
+
+
+
+
+                    replaceFragment(profile);
+
+
                     break;
 
-            }
+                    }
 
             return true;
 
@@ -55,5 +66,17 @@ public class LessonListActivity extends AppCompatActivity {
         mFragmentTransaction.commit();
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+
+
+
+
+
+    }
+    public static final String NOME_PREFERENCE = "INFORMACOES_LOGIN_AUTOMATICO";
 
 }

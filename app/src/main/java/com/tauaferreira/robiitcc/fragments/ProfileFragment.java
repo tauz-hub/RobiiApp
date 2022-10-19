@@ -1,5 +1,10 @@
 package com.tauaferreira.robiitcc.fragments;
 
+import static android.content.Context.MODE_PRIVATE;
+import static com.tauaferreira.robiitcc.UI.LessonListActivity.NOME_PREFERENCE;
+
+import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,7 +12,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.tauaferreira.robiitcc.DAO.Usuario;
+import com.tauaferreira.robiitcc.DAO.UsuarioDAO;
 import com.tauaferreira.robiitcc.R;
 
 /**
@@ -55,12 +63,40 @@ public class ProfileFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
+
+//    public setTextOnFragment(String text){
+//
+//
+//        TextView txt = getActivity().findViewById(R.id.fragment_profile_text);
+//
+//
+//        txt.setText(text);
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        TextView txt = getActivity().findViewById(R.id.fragment_profile_text);
+        System.out.println(txt.getText());
+
+        SharedPreferences prefs = getActivity().getSharedPreferences(NOME_PREFERENCE, MODE_PRIVATE);
+        String username = prefs.getString("usernameSave", null);
+
+        Usuario user = UsuarioDAO.getUsuario(username);
+        txt.setText("nome: " + user.getUsername() + "\nemail: "+ user.getEmail() + "\nSenha: " + user.getPassword());
+    }
+
+    public static final String NOME_PREFERENCE = "INFORMACOES_LOGIN_AUTOMATICO";
 }
