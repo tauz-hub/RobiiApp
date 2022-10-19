@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setupLoginForgotPassword() {
-        TextView linkTextView = findViewById(R.id.textView_login_forgotpassword);
+        TextView linkTextView = findViewById(R.id.textView_login_forgot_password);
         linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
         linkTextView.setOnClickListener(
                 v -> {
