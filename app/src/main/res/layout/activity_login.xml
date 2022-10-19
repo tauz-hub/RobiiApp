@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:contentDescription="@string/contentDescription_login_logo"
-        android:src="@drawable/logo_marca_robii_ofc"
+        android:src="@drawable/logo_robii"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.27"
@@ -23,7 +23,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/rectangle_login_shape"
+        android:background="@drawable/login_rectangle_shape"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:outlineProvider="none"
-                    android:background="@drawable/custom_input"
+                    android:background="@drawable/login_custom_input"
                     android:gravity="center_vertical"
 
                     android:autofillHints="username"
@@ -121,7 +121,7 @@
                     android:textColorHint="@color/white"
 
 
-                    android:background="@drawable/custom_input"
+                    android:background="@drawable/login_custom_input"
                     android:gravity="center_vertical"
                     android:inputType="textPassword"
                     android:padding="8dp"
@@ -163,7 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
                 android:layout_marginRight="60dp"
-                android:background="@drawable/custom_button_login"
+                android:background="@drawable/login_custom_button"
                 android:text="@string/button_login"
                 android:textColor="@color/white"
                 android:textSize="20sp"
