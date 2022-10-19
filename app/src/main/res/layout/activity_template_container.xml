@@ -40,6 +40,8 @@
         android:background="@drawable/phases_create_shape_square"
         app:layout_constraintBottom_toBottomOf="parent">
 
+        <include layout="@layout/activity_create_robot_colors"/>
+
     </FrameLayout>
 
     <ImageView
