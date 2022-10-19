@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:contentDescription="RobiiLogo"
-        android:src="@drawable/logo_marca_robii_ofc"/>
+        android:src="@drawable/logo_robii"/>
 
 
     <ImageView
@@ -22,7 +22,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/logo"
         android:contentDescription="RobiiLogo"
-        android:src="@drawable/rectangle_login" />
+        android:src="@drawable/login_rectangle" />
 
     <TextView
         android:id="@+id/textViewLogin"
@@ -45,7 +45,7 @@
         android:textColor="@android:color/white"
         android:layout_marginLeft="40dp"
         android:ems="20"
-        android:background="@drawable/custom_input"
+        android:background="@drawable/login_custom_input"
         android:padding="8dp"
         android:gravity="center"
         app:fontFamily="@font/montserrat"
@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText_signup_username"
         android:ems="20"
-        android:background="@drawable/custom_input"
+        android:background="@drawable/login_custom_input"
         android:padding="8dp"
         android:gravity="center"
         app:fontFamily="@font/montserrat"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText_signup_email_address"
         android:ems="10"
-        android:background="@drawable/custom_input"
+        android:background="@drawable/login_custom_input"
         android:padding="8dp"
         android:gravity="center"
         app:fontFamily="@font/montserrat"
@@ -104,7 +104,7 @@
         android:text="Create"
         app:fontFamily="@font/montserrat"
         android:textColor="@color/white"
-        android:background="@drawable/custom_button_login"
+        android:background="@drawable/login_custom_button"
         />
 
     <TextView
