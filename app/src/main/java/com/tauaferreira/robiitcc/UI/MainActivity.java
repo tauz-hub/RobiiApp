@@ -1,7 +1,6 @@
 package com.tauaferreira.robiitcc.UI;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,16 +9,15 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.tauaferreira.robiitcc.R;
-import com.tauaferreira.robiitcc.Utils.ConnectedThread;
+import com.tauaferreira.robiitcc.Utils.BluetoothSocketClass;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private ConnectedThread myConn = ConnectedThread.getInstance();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        myConn.start();
 
         Button button_l1 = findViewById(R.id.button_main_l1);
         Button button_l2 = findViewById(R.id.button_main_l2);
@@ -37,16 +35,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+
+
     private void lostConnection(String input) {
 
+        BluetoothSocketClass btSocket = new BluetoothSocketClass();
+        boolean sendMessage = btSocket.sendCommandToArduino(input);
 
-
-        if (!myConn.write(input)) {
-            Toast.makeText(this, "Lost Connection", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, ConnectBluetoothActivity.class));
-            finish();
+        if(sendMessage){
+            Toast.makeText(this, "Perfect", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "ERRO", Toast.LENGTH_SHORT).show();
         }
     }
+
+
 
     @SuppressLint("NonConstantResourceId")
     @Override

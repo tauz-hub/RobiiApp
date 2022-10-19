@@ -13,26 +13,27 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.tauaferreira.robiitcc.R;
 import com.tauaferreira.robiitcc.DAO.UsuarioDAO;
+import com.tauaferreira.robiitcc.Utils.Constantes;
 
 public class LoginActivity extends AppCompatActivity {
-    public static final String NOME_PREFERENCE = "INFORMACOES_LOGIN_AUTOMATICO";
+    public static final String SECRET_PREFERENCE = Constantes.getSecretPreference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        setupLoginForgotPassword();
+//        setupLoginForgotPassword();
         setupLoginSignUp();
 
         //Login Automático
-        SharedPreferences prefs = getSharedPreferences(NOME_PREFERENCE, MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences(SECRET_PREFERENCE, MODE_PRIVATE);
         String login = prefs.getString("usernameSave", null);
         String senha = prefs.getString("passwordSave", null);
         if (login != null) {
             boolean res = UsuarioDAO.verificarUsuario(login, senha);
             if (res) {
-                startActivity(new Intent(getBaseContext(), ConnectBluetoothActivity.class));
+                startActivity(new Intent(this, LessonListActivity.class));
                 finish();
             }
 
@@ -47,12 +48,12 @@ public class LoginActivity extends AppCompatActivity {
 
             if (res) {
 
-                SharedPreferences.Editor editor = getSharedPreferences(NOME_PREFERENCE, MODE_PRIVATE).edit();
+                SharedPreferences.Editor editor = getSharedPreferences(SECRET_PREFERENCE, MODE_PRIVATE).edit();
 
                 editor.putString("usernameSave", mUsername.getText().toString());
                 editor.putString("passwordSave", mPassword.getText().toString());
                 editor.apply();
-                startActivity(new Intent(getBaseContext(), ConnectBluetoothActivity.class));
+                startActivity(new Intent(this, LessonListActivity.class));
                 finish();
             } else {
                 Toast.makeText(getBaseContext(), "Usuario não autenticado", Toast.LENGTH_LONG).show();
@@ -60,15 +61,15 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    private void setupLoginForgotPassword() {
-        TextView linkTextView = findViewById(R.id.textView_login_forgot_password);
-        linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
-        linkTextView.setOnClickListener(
-                v -> {
+//    private void setupLoginForgotPassword() {
+//        TextView linkTextView = findViewById(R.id.textView_login_forgot_password);
+//        linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
+//        linkTextView.setOnClickListener(
+//                v -> {
 //                    startActivity(new Intent(getBaseContext(), MainActivity.class));
 //                    finish();
-                });
-    }
+//                });
+//    }
 
     private void setupLoginSignUp() {
         TextView linkTextView = findViewById(R.id.textView_hyperlink_signup);

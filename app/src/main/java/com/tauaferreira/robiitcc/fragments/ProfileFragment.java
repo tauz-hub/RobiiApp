@@ -1,9 +1,7 @@
 package com.tauaferreira.robiitcc.fragments;
 
 import static android.content.Context.MODE_PRIVATE;
-import static com.tauaferreira.robiitcc.UI.LessonListActivity.NOME_PREFERENCE;
 
-import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -17,11 +15,14 @@ import android.widget.TextView;
 import com.tauaferreira.robiitcc.DAO.Usuario;
 import com.tauaferreira.robiitcc.DAO.UsuarioDAO;
 import com.tauaferreira.robiitcc.R;
+import com.tauaferreira.robiitcc.Utils.Constantes;
 
 public class ProfileFragment extends Fragment {
 
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    public static final String SECRET_PREFERENCE = Constantes.getSecretPreference();
+
 
     private String mParam1;
     private String mParam2;
@@ -64,12 +65,11 @@ public class ProfileFragment extends Fragment {
         TextView txt = getActivity().findViewById(R.id.fragment_profile_text);
         System.out.println(txt.getText());
 
-        SharedPreferences prefs = getActivity().getSharedPreferences(NOME_PREFERENCE, MODE_PRIVATE);
+        SharedPreferences prefs = getActivity().getSharedPreferences(SECRET_PREFERENCE , MODE_PRIVATE);
         String username = prefs.getString("usernameSave", null);
 
         Usuario user = UsuarioDAO.getUsuario(username);
         txt.setText("nome: " + user.getUsername() + "\nemail: "+ user.getEmail() + "\nSenha: " + user.getPassword());
     }
 
-    public static final String NOME_PREFERENCE = "INFORMACOES_LOGIN_AUTOMATICO";
 }
