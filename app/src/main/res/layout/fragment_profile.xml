@@ -40,9 +40,11 @@
             android:gravity="center">
 
             <EditText
+                android:id="@+id/editText_profile_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="Username"
+                android:text="NULL"
                 android:textColorHint="@color/gray_500"
                 android:gravity="center"
                 android:fontFamily="@font/montserrat"
@@ -126,6 +128,7 @@
             >
 
             <TextView
+                android:id="@+id/textView_profile_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserrat"
@@ -144,6 +147,7 @@
                 android:layout_marginBottom="15dp">
 
                 <EditText
+                    android:id="@+id/editText_profile_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
@@ -174,6 +178,7 @@
                 android:layout_marginBottom="15dp">
 
                 <EditText
+                    android:id="@+id/editText_profile_lastname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
@@ -204,6 +209,7 @@
                 android:layout_marginBottom="15dp">
 
                 <EditText
+                    android:id="@+id/editText_profile_birthday"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserrat"
@@ -246,6 +252,7 @@
                 android:layout_gravity="center"/>
 
             <TextView
+                android:id="@+id/textView_profile_progress_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="25%"

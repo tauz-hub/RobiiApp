@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.tauaferreira.robiitcc.DAO.Usuario;
@@ -60,16 +61,26 @@ public class ProfileFragment extends Fragment {
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-        TextView txt = getActivity().findViewById(R.id.fragment_profile_text);
-        System.out.println(txt.getText());
+    public void onResume() {
+        super.onResume();
+        EditText etUsername = getActivity().findViewById(R.id.editText_profile_username);
+        EditText etBirthday = getActivity().findViewById(R.id.editText_profile_birthday);
+        EditText etName = getActivity().findViewById(R.id.editText_profile_name);
+        TextView tvEmail = getActivity().findViewById(R.id.textView_profile_email);
+        EditText etLastname =getActivity().findViewById(R.id.editText_profile_lastname);
+        TextView tvProgressbar = getActivity().findViewById(R.id.textView_profile_progress_bar);
 
         SharedPreferences prefs = getActivity().getSharedPreferences(SECRET_PREFERENCE , MODE_PRIVATE);
         String username = prefs.getString("usernameSave", null);
 
         Usuario user = UsuarioDAO.getUsuario(username);
-        txt.setText("nome: " + user.getUsername() + "\nemail: "+ user.getEmail() + "\nSenha: " + user.getPassword());
+
+        etUsername.setText( user.getUsername());
+        etBirthday.setText(user.getBithdate());
+        tvEmail.setText(user.getEmail());
+        etLastname.setText(user.getName());
+        etName.setText(user.getName());
+        tvProgressbar.setText("22%");
     }
 
 }
