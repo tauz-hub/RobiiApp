@@ -9,6 +9,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="base_blue">#0019F8</color>
     <color name="back_blue">#06091A</color>
-    <color name="gray_500">#339B9B9B</color>
+    <color name="gray_500">#83D8D8D8</color>
+
+    <!-- Login -->
+    <color name="white_text">#FFFFFFFF</color>
+
+    <!-- Lesson List -->
+    <color name="background_main">#FF06091A</color>
+
+    <color name="background_login">#FF0019F8</color>
 
 </resources>

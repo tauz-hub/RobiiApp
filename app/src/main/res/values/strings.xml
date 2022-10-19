@@ -2,7 +2,7 @@
     <string name="app_name">RobiiTCC</string>
     <!-- Strings related to login -->
     <string name="prompt_username">Username</string>
-    <string name="prompt_forgotpassword">Forgot password?</string>
+    <string name="prompt_forgot_password">Forgot password?</string>
     <string name="prompt_haveaccount">Have a account? Sign in</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
@@ -26,6 +26,22 @@
     <string name="unknown_characteristic">Unknown characteristic</string>
     <string name="unknown_service">Unknown service</string>
 
+    <string name="text_view_signup">Sign Up</string>
+
+    <!-- Progress Bar -->
+    <string name="progress_percentage">25%</string>
+    <string name="progress">Progresso:</string>
+
+    <!-- ScrollView -->
+    <string name="SV_itens_number_1">1</string>
+    <string name="SV_itens_number_2">2</string>
+    <string name="SV_itens_number_3">3</string>
+    <string name="SV_itens_number_4">4</string>
+    <string name="SV_itens_number_5">5</string>
+    <string name="SV_itens_number_6">6</string>
+    <string name="SV_itens_number_7">7</string>
+    <string name="SV_itens_number_8">8</string>
+
     <!-- Menu items -->
     <string name="menu_connect">Connect</string>
     <string name="menu_disconnect">Disconnect</string>
@@ -33,12 +49,18 @@
     <string name="menu_stop">Stop</string>
     <string name="is_serial">Serial Present:</string>
     <string-array name="roygbiv">
-        <item >Red</item>
-        <item >Green</item>
-        <item >Blue</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
     </string-array>
     <string name="button">Send</string>
     <string name="red_slide">Red</string>
     <string name="blue_slide">Blue</string>
     <string name="green_slide">Green</string>
-</resources>
+    <string name="login">Login</string>
+    <string name="contentDescription_login_logo">Logo Robii</string>
+    <string name="button_login">Login</string>
+    <string name="menu_profile">Profile</string>
+    <string name="sequence_phrase">Robii</string>
+
+<string name="menu_home">Home</string></resources>

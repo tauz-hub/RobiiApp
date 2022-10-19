@@ -3,22 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.147" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/drawable/custom_button_login.xml" value="0.1035" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/font/.xml" value="0.23958333333333334" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/font/montserrat_alternates_bold.xml" value="0.23958333333333334" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/actionbar_indeterminate_progress.xml" value="0.13541666666666666" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_connect_bluetooth.xml" value="0.14" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_login.xml" value="0.15" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/drawable-v24/blue_ellipse.xml" value="0.209" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/drawable-v24/rectangle_progress_bar.xml" value="0.209" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/drawable/intersect_bottom.xml" value="0.209" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/drawable/intersect_top.xml" value="0.209" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/drawable/rectangle_login.xml" value="0.387" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/layout/activity_lesson_list.xml" value="0.2441123188405797" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/layout/activity_main.xml" value="0.2441123188405797" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/layout/activity_signup.xml" value="0.2015625" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/layout/progress_bar.xml" value="0.38697916666666665" />
+        <entry key="..\:/OneDrive/Estudos/Programming/ProjectsAndroidStudio/RobiiApp/app/src/main/res/layout/scrollview_itens.xml" value="0.38697916666666665" />
+        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_main.xml" value="0.209375" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_signup.xml" value="0.18" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/activity_splash.xml" value="0.18" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/att_services_characteristics.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/fragment_login.xml" value="0.18" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/gatt_services_characteristics.xml" value="0.1" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/layout/listitem_device.xml" value="0.1" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/menu/gatt_services.xml" value="0.1" />
-        <entry key="..\:/Users/tauz/AndroidStudioProjects/RobiiTCC/app/src/main/res/menu/main.xml" value="0.1" />
       </map>
     </option>
   </component>
