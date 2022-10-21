@@ -10,18 +10,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/icon_logo"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/icon_logo"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.RobiiTCC">
         <activity android:name=".UI.MainActivity" />
         <activity android:name=".UI.SignUpActivity" />
-        <activity android:name=".UI.LessonListActivity" />
         <activity android:name=".UI.LoginActivity"/>
         <activity android:name=".UI.LevelOneActivity"/>
         <activity
-            android:name=".UI.SplashActivity"
+            android:name=".UI.LessonListActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
