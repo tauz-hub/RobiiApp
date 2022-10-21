@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="150dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/rectangle_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shape_square_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/LL_crsc1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="546dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/rectangle_container"
+            app:layout_constraintStart_toStartOf="@id/rectangle_container"
+            app:layout_constraintTop_toTopOf="@id/rectangle_container"
+            >
+
+            <ImageView
+                android:id="@+id/pccc_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phases_create_connection_circle_blue"
+                />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/pccc_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phases_create_connection_circle_yellow" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/LL_crsc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/rectangle_container"
+            app:layout_constraintEnd_toEndOf="@id/rectangle_container"
+            app:layout_constraintStart_toStartOf="@id/rectangle_container"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/pccc_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phases_create_connection_circle_green" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/pccc_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phases_create_connection_circle_pink"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

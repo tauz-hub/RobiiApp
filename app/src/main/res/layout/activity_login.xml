@@ -48,9 +48,7 @@
                 android:textSize="32sp"
                 app:fontFamily="@font/montserrat_bold" />
 
-
         </androidx.appcompat.widget.LinearLayoutCompat>
-
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/LL_Credentials"
@@ -82,11 +80,9 @@
                     android:outlineProvider="none"
                     android:background="@drawable/login_custom_input"
                     android:gravity="center_vertical"
-
                     android:autofillHints="username"
                     android:hint="@string/prompt_username"
                     android:textColorHint="@color/white"
-
                     android:textColor="#FFFFFF"
                     android:inputType="text"
                     android:padding="8dp"
@@ -115,12 +111,9 @@
                     android:id="@+id/editText_login_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:hint="@string/prompt_password"
                     android:autofillHints="password"
                     android:textColorHint="@color/white"
-
-
                     android:background="@drawable/login_custom_input"
                     android:gravity="center_vertical"
                     android:inputType="textPassword"

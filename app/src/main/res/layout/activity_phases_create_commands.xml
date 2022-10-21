@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background_main">
-
+    android:background="@color/background_main"
+    >
     <include layout="@layout/back_arrow"/>
 
     <TextView
@@ -22,15 +22,25 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
-
     <ImageView
         android:id="@+id/graph_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src=""
         app:layout_constraintTop_toBottomOf="@id/txt_phrase"
         app:layout_constraintBottom_toTopOf="@id/fl_container_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phases_creation_play_button"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fl_container_content"
         />
 
     <FrameLayout
@@ -40,6 +50,7 @@
         android:background="@drawable/phases_create_shape_square"
         app:layout_constraintBottom_toBottomOf="parent">
 
+        <include layout="@layout/create_robot_joystick"/>
 
     </FrameLayout>
 
@@ -53,5 +64,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
