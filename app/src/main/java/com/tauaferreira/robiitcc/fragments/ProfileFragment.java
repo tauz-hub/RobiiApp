@@ -67,7 +67,7 @@ public class ProfileFragment extends Fragment {
         EditText etBirthday = getActivity().findViewById(R.id.editText_profile_birthday);
         EditText etName = getActivity().findViewById(R.id.editText_profile_name);
         TextView tvEmail = getActivity().findViewById(R.id.textView_profile_email);
-        EditText etLastname =getActivity().findViewById(R.id.editText_profile_lastname);
+        //EditText etLastname =getActivity().findViewById(R.id.editText_profile_lastname);
         TextView tvProgressbar = getActivity().findViewById(R.id.textView_profile_progress_bar);
 
         SharedPreferences prefs = getActivity().getSharedPreferences(SECRET_PREFERENCE , MODE_PRIVATE);
@@ -78,7 +78,7 @@ public class ProfileFragment extends Fragment {
         etUsername.setText( user.getUsername());
         etBirthday.setText(user.getBithdate());
         tvEmail.setText(user.getEmail());
-        etLastname.setText(user.getName());
+        //etLastname.setText(user.getName());
         etName.setText(user.getName());
         tvProgressbar.setText("22%");
     }
