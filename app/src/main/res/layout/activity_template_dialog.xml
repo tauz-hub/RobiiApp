@@ -22,6 +22,7 @@
     />
 
     <TextView
+        android:id="@+id/textView_template_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
@@ -38,10 +39,11 @@
         app:layout_constraintEnd_toEndOf="@id/sequence_phrase"
         />
 
-    <ImageView
+    <Button
+        android:id="@+id/button_template_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/phases_next_button"
+        android:drawableTop="@drawable/phases_next_button"
         app:layout_constraintTop_toBottomOf="@id/sequence_phrase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
