@@ -11,6 +11,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.tauaferreira.robiitcc.R;
+import com.tauaferreira.robiitcc.UI.LevelOne.OneActivity;
 import com.tauaferreira.robiitcc.databinding.ActivityLessonListBinding;
 import com.tauaferreira.robiitcc.fragments.HomeFragment;
 import com.tauaferreira.robiitcc.fragments.ProfileFragment;
@@ -33,6 +34,7 @@ public class LessonListActivity extends AppCompatActivity {
             switch (item.getItemId()){
                 case R.id.menu_home:
                     replaceFragment(new HomeFragment());
+
                     break;
                 case R.id.menu_profile:
                     Fragment profile = new ProfileFragment();
@@ -42,6 +44,7 @@ public class LessonListActivity extends AppCompatActivity {
             return true;
 
         });
+
     }
 
     private void replaceFragment(Fragment fragment){
@@ -53,23 +56,6 @@ public class LessonListActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        ImageView level1 = findViewById(R.id.level_1);
-        ImageView level2 = findViewById(R.id.level_2);
-        ImageView level3 = findViewById(R.id.level_3);
-        ImageView level4= findViewById(R.id.level_4);
-        ImageView level5 = findViewById(R.id.level_5);
-        ImageView level6 = findViewById(R.id.level_6);
-        ImageView level7 = findViewById(R.id.level_7);
-        ImageView level8 = findViewById(R.id.level_8);
-
-        level1.setOnClickListener (v -> {
-            startActivity(new Intent(this, MainActivity.class));
-        });
-    }
 
 
 }
