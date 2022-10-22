@@ -9,17 +9,29 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <ImageView
             android:id="@+id/circle_design"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="320dp"
             android:src="@drawable/profile_blue_ellipse"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/logoff"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profile_ic_disconnect"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <ImageView
             android:id="@+id/avatar"
@@ -82,7 +94,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/user_data"
             android:gravity="start"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="5dp"
             android:layout_marginStart="30dp"
             >
 
@@ -126,7 +138,7 @@
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@+id/circle_design"
             app:layout_constraintLeft_toRightOf="@+id/user_info"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
             >
 
@@ -157,6 +169,7 @@
                     android:background="@android:color/transparent"
                     android:text="design"
                     android:hint="@string/profile_hint_name"
+                    android:textColorHint="@color/white"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:maxLength="20"
@@ -187,6 +200,7 @@
                     android:background="@android:color/transparent"
                     android:text="03/08/2004"
                     android:hint="@string/profile_hint_birthdate"
+                    android:textColorHint="@color/white"
                     android:maxLength="10"
                     android:textColor="@color/white"
                     android:textSize="20sp"
@@ -207,34 +221,44 @@
         </LinearLayout>
 
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/txt_total_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/user_data"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/profile_total_progress"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_data" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/profile_total_progress"
-                android:textColor="@color/white"
-                android:fontFamily="@font/montserrat"
-                android:textSize="20sp"
-                android:textAlignment="center"/>
+        <ImageView
+            android:id="@+id/profile_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_progress_bar"
+            android:layout_marginTop="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_total_progress"
+            />
 
-            <TextView
-                android:id="@+id/textView_profile_progress_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="25%"
-                android:textSize="15pt"
-                android:textAlignment="center"
-                android:textColor="@color/white"/>
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/textView_profile_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="9pt"
+            app:layout_constraintEnd_toEndOf="@id/profile_progress_bar"
+            app:layout_constraintStart_toStartOf="@id/profile_progress_bar"
+            app:layout_constraintTop_toTopOf="@+id/profile_progress_bar"
+            app:layout_constraintBottom_toBottomOf="@id/profile_progress_bar"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
