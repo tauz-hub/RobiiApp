@@ -23,14 +23,7 @@
         />
 
 
-    <ImageView
-        android:id="@+id/graph_level"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/txt_phrase"
-        app:layout_constraintBottom_toTopOf="@id/fl_container_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <include layout="@layout/create_robot_shapes_container"
         />
 
     <FrameLayout
@@ -40,6 +33,7 @@
         android:background="@drawable/phases_create_shape_square"
         app:layout_constraintBottom_toBottomOf="parent">
 
+        <include layout="@layout/create_robot_colors"/>
 
     </FrameLayout>
 

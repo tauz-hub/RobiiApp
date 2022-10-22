@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="350dp"
-    android:layout_height="248dp"
+    android:layout_height="220dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="16dp"
     android:background="@drawable/shape_rectangle_white"
     >
 
@@ -16,8 +18,8 @@
             android:id="@+id/shape_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="17dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
             android:src="@drawable/phases_create_connection_shape_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/shape_green" />
@@ -37,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="37dp"
+            android:layout_marginBottom="16dp"
             android:src="@drawable/phases_create_connection_shape_orange"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -46,7 +48,7 @@
             android:id="@+id/shape_pink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/phases_create_connection_shape_pink"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +58,8 @@
             android:id="@+id/shape_violet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
             android:src="@drawable/phases_create_connection_shape_violet"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -66,11 +68,13 @@
             android:id="@+id/shape_yellow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
             android:src="@drawable/phases_create_connection_shape_yellow"
             app:layout_constraintBottom_toTopOf="@+id/shape_blue"
             app:layout_constraintEnd_toEndOf="@+id/shape_blue" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     
