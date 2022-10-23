@@ -13,20 +13,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.tauaferreira.robiitcc.R;
 import com.tauaferreira.robiitcc.DAO.UsuarioDAO;
-import com.tauaferreira.robiitcc.Utils.Constantes;
+import com.tauaferreira.robiitcc.Utils.Constants;
 
 public class LoginActivity extends AppCompatActivity {
-    public static final String SECRET_PREFERENCE = Constantes.getSecretPreference();
+    public static final String SECRET_PREFERENCE = Constants.getSecretPreference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-//        setupLoginForgotPassword();
         setupLoginSignUp();
 
-        //Login Automático
         SharedPreferences prefs = getSharedPreferences(SECRET_PREFERENCE, MODE_PRIVATE);
         String login = prefs.getString("usernameSave", null);
         String senha = prefs.getString("passwordSave", null);
@@ -61,15 +59,6 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-//    private void setupLoginForgotPassword() {
-//        TextView linkTextView = findViewById(R.id.textView_login_forgot_password);
-//        linkTextView.setMovementMethod(LinkMovementMethod.getInstance());
-//        linkTextView.setOnClickListener(
-//                v -> {
-//                    startActivity(new Intent(getBaseContext(), MainActivity.class));
-//                    finish();
-//                });
-//    }
 
     private void setupLoginSignUp() {
         TextView linkTextView = findViewById(R.id.textView_hyperlink_signup);

@@ -11,7 +11,7 @@
         android:id="@+id/txt_phrase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="random stuff"
+        android:text="Selecione a sequência de seta abaixo"
         android:textColor="@color/white"
         android:textAlignment="center"
         android:textSize="24sp"

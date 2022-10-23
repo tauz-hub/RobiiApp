@@ -7,16 +7,19 @@ public class Usuario {
     private String password;
     private String bithdate;
     private String name;
+    private String levelUser;
 
-    public Usuario(String id, String username, String email, String password, String bithdate, String name){
+    public Usuario(String id, String username, String email, String password, String bithdate, String name, String levelUser) {
         this.id = id;
         this.username = username;
         this.email = email;
         this.password = password;
         this.bithdate = bithdate;
         this.name = name;
+        this.levelUser = levelUser;
     }
-    public Usuario(String username, String email, String password){
+
+    public Usuario(String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -75,6 +78,11 @@ public class Usuario {
         this.name = name;
     }
 
+    public String getLevelUser() {
+        return levelUser;
+    }
 
-
+    public void setLevelUser(String levelUser) {
+        this.levelUser = levelUser;
+    }
 }

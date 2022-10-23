@@ -7,8 +7,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class SQLDatabaseConnection {
-    // Objeto de conexão
-    static String ip = "192.168.0.30";
+
+    static String ip = "192.168.42.191";
     static String banco = "ROBIIAPP";
 
     static String usuario = "sa";
@@ -35,6 +35,7 @@ public class SQLDatabaseConnection {
         } catch (Exception erro) {
             Log.d("CONEXAO_MSSQL", erro.getMessage());
             return null;
+
         }
 
         return conn;

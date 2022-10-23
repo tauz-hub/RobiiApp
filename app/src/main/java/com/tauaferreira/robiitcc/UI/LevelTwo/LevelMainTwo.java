@@ -1,8 +1,7 @@
-package com.tauaferreira.robiitcc.UI.LevelOne;
+package com.tauaferreira.robiitcc.UI.LevelTwo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.tauaferreira.robiitcc.R;
 
-public class SecondActivity extends AppCompatActivity {
+public class LevelMainTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -20,19 +19,23 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_template_dialog);
         TextView txt = findViewById(R.id.textView_template_dialog);
 
-        txt.setText("Já tenho a base,\n" +
-                "porém preciso destrancar o baú onde ele está. Me ajude a colocar a ordem correta dos números \n");
+        txt.setText("IOBIIIIIIIIIII!!!!!!\n" +
+                "Você foi excelente :)\n" +
+                "Agora vamos começar a decorar o nosso Robô, me ajude a colocar as cores nos lugares certos.");
 
 
         ImageView btNext = findViewById(R.id.button_template_next);
-        ImageView btBack = findViewById(R.id.button_backArrow);
+
         btNext.setOnClickListener(v->{
-            startActivity(new Intent(getBaseContext(), ThreeActivity.class));
+           startActivity(new Intent(getBaseContext(), LevelTwoSecondActivity.class));
         });
+        ImageView btBack = findViewById(R.id.button_backArrow);
+
 
         btBack.setOnClickListener(v->{
             this.finish();
         });
+
 
     }
 }

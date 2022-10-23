@@ -29,7 +29,7 @@
     <string name="text_view_signup">Sign Up</string>
 
     <!-- Progress Bar -->
-    <string name="progress_percentage">25%</string>
+    <string name="progress_percentage">0%</string>
     <string name="progress">Progresso:</string>
 
     <!-- ScrollView -->
@@ -69,7 +69,7 @@
     <string name="profile_TXTname">Name:</string>
     <string name="profile_total_progress">Total Progress</string>
     <string name="profile_TXTavatar">Avatar</string>
-    <string name="profile_hint_birthdate">Birth date</string>
-    <string name="profile_hint_name">Name</string>
+    <string name="profile_hint_birthdate">-</string>
+    <string name="profile_hint_name">-</string>
     <string name="loading_robot">Robô \n executando...</string>
 </resources>
