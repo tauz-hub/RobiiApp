@@ -8,7 +8,7 @@ import java.sql.DriverManager;
 
 public class SQLDatabaseConnection {
 
-    static String ip = "192.168.42.191";
+    static String ip = "192.168.0.30";
     static String banco = "ROBIIAPP";
 
     static String usuario = "sa";

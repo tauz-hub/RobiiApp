@@ -25,6 +25,7 @@
         <activity android:name=".UI.LevelOne.LevelOneFourActivity"/>
         <activity android:name=".UI.LevelTwo.LevelMainTwo"/>
         <activity android:name=".UI.LevelTwo.LevelTwoSecondActivity"/>
+        <activity android:name=".UI.LevelTwo.LevelTwoThreeActivity"/>
         <activity android:name=".UI.LevelThree.LevelMainThree"/>
         <activity android:name=".UI.LevelThree.LevelThreeSecondActivity"/>
         <activity android:name=".UI.LevelFour.LevelMainFour"/>

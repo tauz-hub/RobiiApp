@@ -235,16 +235,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/user_data" />
 
-        <ImageView
-            android:id="@+id/profile_progress_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/profile_progress_bar"
-            android:layout_marginTop="13dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_total_progress"
-            />
+<!--        <ImageView-->
+<!--            android:id="@+id/profile_progress_bar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/profile_progress_bar"-->
+<!--            android:layout_marginTop="13dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/txt_total_progress"-->
+<!--            />-->
 
         <TextView
             android:id="@+id/textView_profile_progress_bar"
@@ -254,10 +254,10 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="9pt"
-            app:layout_constraintEnd_toEndOf="@id/profile_progress_bar"
-            app:layout_constraintStart_toStartOf="@id/profile_progress_bar"
-            app:layout_constraintTop_toTopOf="@+id/profile_progress_bar"
-            app:layout_constraintBottom_toBottomOf="@id/profile_progress_bar"
+             app:layout_constraintTop_toTopOf="@+id/txt_total_progress"
+         android:layout_marginTop="100px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

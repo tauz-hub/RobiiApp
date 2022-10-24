@@ -55,6 +55,8 @@ public class HomeFragment extends Fragment {
         super.onStart();
         ImageView level1 = getActivity().findViewById(R.id.level_1);
 
+        ImageView level2 = getActivity().findViewById(R.id.level_2);
+
 
         SharedPreferences prefs = getActivity().getSharedPreferences(SECRET_PREFERENCE, MODE_PRIVATE);
         String username = prefs.getString("usernameSave", null);
@@ -73,8 +75,21 @@ public class HomeFragment extends Fragment {
             progressBar.setText(percent + "%");
         }
 
+        if (level.equals("2")) {
+            System.out.println(level);
+            Drawable drawable = getResources().getDrawable(R.drawable.main_blue_ellipse);
+            level1.setImageDrawable(drawable);
+            level2.setImageDrawable(drawable);
 
-        ImageView level2 = getActivity().findViewById(R.id.level_2);
+
+            TextView progressBar = getActivity().findViewById(R.id.progress_percentage);
+            Integer percent = Integer.parseInt(level) * 100 / 8;
+
+            progressBar.setText(percent + "%");
+        }
+
+
+
         ImageView level3 = getActivity().findViewById(R.id.level_3);
         ImageView level4 = getActivity().findViewById(R.id.level_4);
         ImageView level5 = getActivity().findViewById(R.id.level_5);

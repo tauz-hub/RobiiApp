@@ -43,15 +43,6 @@
 
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/arrow_next_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/phases_next_arrow"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
